@@ -11,6 +11,12 @@ export class DataBindingComponent implements OnInit {
   urlImagem: string = 'https://picsum.photos/id/1/400/200';
 
   nomeDoCurso: string = 'Angular';
+
+  valorInicial = 15;
+
+  onMudouValor(evento: any){
+    console.log(evento.novoValor);
+  }
   
   getValor() {
     return 1;
