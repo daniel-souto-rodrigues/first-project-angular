@@ -1,0 +1,39 @@
+<section class="two-way-databinding">
+    <article>
+        <h3>Two-way data binding</h3>
+        <div>
+            <!-- via nomear o campo -->
+            <!-- <input type="text" 
+            [value]="nome"
+            (input)="nome = campoInput.value"
+            #campoInput>  -->
+
+            <!-- via ngModel -->
+            <!-- <input type="text" 
+            [ngModel]="nome"
+            (ngModelChange)="nome = $event">  -->
+
+            <!-- via ngModel two-way-databinding -->
+            <!-- <input type="text" [(ngModel)]="nome">  -->
+            <!-- <p>Você digitou: {{ nome }}</p> -->
+        </div>
+
+        <div>
+            <!-- NgModel forms -->
+            <input type="text" [(ngModel)]="pessoa.nome">
+            <input type="text" [(ngModel)]="pessoa.idade">
+            <br><br>
+            <input type="text" [(ngModel)]="pessoa.endereco.rua">
+            <input type="text" [(ngModel)]="pessoa.endereco.numero">
+            <input type="text" [(ngModel)]="pessoa.endereco.cep">
+            <br><br>
+            <p>Meu nome é {{ pessoa.nome }} e tenho {{ pessoa.idade }} anos de idade</p>
+            <br>
+            <p>Eu moro na rua {{ pessoa.endereco.rua }} no número
+                {{ pessoa.endereco.numero }} de cep
+                {{ pessoa.endereco.cep }}
+            </p>
+        </div>
+
+    </article>
+</section>

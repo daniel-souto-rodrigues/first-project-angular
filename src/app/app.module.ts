@@ -9,13 +9,15 @@ import { CursosModule } from './cursos/cursos.module';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { EventBindingComponent } from './event-binding/event-binding.component';
+import { TwoWayDatabindingComponent } from './two-way-databinding/two-way-databinding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyFirstComponentComponent,
     DataBindingComponent,
-    EventBindingComponent
+    EventBindingComponent,
+    TwoWayDatabindingComponent
   ],
   imports: [
     BrowserModule,
