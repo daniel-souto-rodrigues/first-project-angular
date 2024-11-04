@@ -9,6 +9,8 @@ export class DataBindingComponent implements OnInit {
   youtubeUrl: string = 'http://youtube.com.br'
   cursoAngular: boolean = true;
   urlImagem: string = 'https://picsum.photos/id/1/400/200';
+
+  nomeDoCurso: string = 'Angular';
   
   getValor() {
     return 1;

@@ -10,6 +10,7 @@ import { DataBindingComponent } from './data-binding/data-binding.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { EventBindingComponent } from './event-binding/event-binding.component';
 import { TwoWayDatabindingComponent } from './two-way-databinding/two-way-databinding.component';
+import { InputPropertyComponent } from './input-property/input-property.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { TwoWayDatabindingComponent } from './two-way-databinding/two-way-databi
     MyFirstComponentComponent,
     DataBindingComponent,
     EventBindingComponent,
-    TwoWayDatabindingComponent
+    TwoWayDatabindingComponent,
+    InputPropertyComponent
   ],
   imports: [
     BrowserModule,
