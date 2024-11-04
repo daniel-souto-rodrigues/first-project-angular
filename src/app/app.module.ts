@@ -8,12 +8,14 @@ import { MyFirstComponentComponent } from './my-first-component/my-first-compone
 import { CursosModule } from './cursos/cursos.module';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { EventBindingComponent } from './event-binding/event-binding.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MyFirstComponentComponent,
-    DataBindingComponent
+    DataBindingComponent,
+    EventBindingComponent
   ],
   imports: [
     BrowserModule,
