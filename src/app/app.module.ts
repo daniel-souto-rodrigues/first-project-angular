@@ -15,6 +15,7 @@ import { OutputPropertyComponent } from './output-property/output-property.compo
 import { AppCicloComponent } from './app-ciclo/app-ciclo.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { DirectivesNgswitchComponent } from './directives-ngswitch/directives-ngswitch.component';
+import { DirectivesNgforComponent } from './directives-ngfor/directives-ngfor.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { DirectivesNgswitchComponent } from './directives-ngswitch/directives-ng
     OutputPropertyComponent,
     AppCicloComponent,
     DirectivesComponent,
-    DirectivesNgswitchComponent
+    DirectivesNgswitchComponent,
+    DirectivesNgforComponent
   ],
   imports: [
     BrowserModule,
