@@ -13,6 +13,7 @@ import { TwoWayDatabindingComponent } from './two-way-databinding/two-way-databi
 import { InputPropertyComponent } from './input-property/input-property.component';
 import { OutputPropertyComponent } from './output-property/output-property.component';
 import { AppCicloComponent } from './app-ciclo/app-ciclo.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AppCicloComponent } from './app-ciclo/app-ciclo.component';
     TwoWayDatabindingComponent,
     InputPropertyComponent,
     OutputPropertyComponent,
-    AppCicloComponent
+    AppCicloComponent,
+    DirectivesComponent
   ],
   imports: [
     BrowserModule,
