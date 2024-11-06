@@ -14,6 +14,7 @@ import { InputPropertyComponent } from './input-property/input-property.componen
 import { OutputPropertyComponent } from './output-property/output-property.component';
 import { AppCicloComponent } from './app-ciclo/app-ciclo.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { DirectivesNgswitchComponent } from './directives-ngswitch/directives-ngswitch.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { DirectivesComponent } from './directives/directives.component';
     InputPropertyComponent,
     OutputPropertyComponent,
     AppCicloComponent,
-    DirectivesComponent
+    DirectivesComponent,
+    DirectivesNgswitchComponent
   ],
   imports: [
     BrowserModule,
