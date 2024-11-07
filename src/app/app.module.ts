@@ -1,6 +1,7 @@
-import { NgModule } from '@angular/core';
+import { LOCALE_ID, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
+import '@angular/common/locales/global/pt';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -30,6 +31,10 @@ import { CursosService } from './cursos/cursos.service';
 import { LogService } from './shared/log.service';
 import { PipesComponent } from './pipes/pipes.component';
 import { CamelCasePipe } from './camel-case.pipe';
+import { SettingsService } from './settings.service';
+import { settings } from 'node:cluster';
+
+
 
 @NgModule({
   declarations: [
@@ -66,7 +71,13 @@ import { CamelCasePipe } from './camel-case.pipe';
   ],
   providers: [
     //CursosService, /*Caso queira ter uma instância separada do serviço se declara dentro do @Component dento do component.ts o provider e remove ele do app.module */
-    LogService
+    LogService,
+    SettingsService,
+    {
+      provide: LOCALE_ID,
+      deps: [SettingsService],
+      useFactory: (settingsService: { getLocale: () => any; }) => settingsService.getLocale()
+    }
   ], 
   
   bootstrap: [AppComponent]
