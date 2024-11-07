@@ -22,6 +22,7 @@ import { ElvisOperatorComponent } from './elvis-operator/elvis-operator.componen
 import { ExampleNgcontentComponent } from './example-ngcontent/example-ngcontent.component';
 import { BackgroundYellowDirective } from './shared/background-yellow.directive';
 import { CustomDirectivesComponent } from './custom-directives/custom-directives.component';
+import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { CustomDirectivesComponent } from './custom-directives/custom-directives
     ElvisOperatorComponent,
     ExampleNgcontentComponent,
     BackgroundYellowDirective,
-    CustomDirectivesComponent
+    CustomDirectivesComponent,
+    HighlightMouseDirective
   ],
   imports: [
     BrowserModule,
