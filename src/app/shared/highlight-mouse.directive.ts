@@ -34,4 +34,5 @@ export class HighlightMouseDirective {
     private _elementRef: ElementRef,
     private _renderer: Renderer2
   ) { }
+
 }
