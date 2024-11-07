@@ -1,15 +1,22 @@
 import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable(
+  {providedIn: 'any'} //para cada serviço ter sua instância é necessário mudar para 'any' em vez de 'root'
+)
 export class CursosService {
 
-  //http
+  private cursos: string[] = ['Java', 'Ext JS', 'Angular'];
 
-  constructor() { }
+  constructor() {
+    console.log('**CursosService**');
+  }
 
   getCursos() {
-    return ['Java', 'Ext JS', 'Angular'];
+    return this.cursos;
+  }
+
+  addCursos(curso: string)
+  {
+    this.cursos.push(curso);
   }
 }

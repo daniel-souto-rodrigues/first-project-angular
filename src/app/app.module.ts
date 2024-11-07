@@ -25,6 +25,8 @@ import { CustomDirectivesComponent } from './custom-directives/custom-directives
 import { HighlightMouseDirective } from './shared/highlight-mouse.directive';
 import { HighlightDirective } from './shared/highlight.directive';
 import { NgElseDirective } from './shared/ng-else.directive';
+import { CreateCursoModule } from './cursos/create-curso/create-curso.module';
+import { CursosService } from './cursos/cursos.service';
 
 @NgModule({
   declarations: [
@@ -54,9 +56,12 @@ import { NgElseDirective } from './shared/ng-else.directive';
     FormsModule,
     AppRoutingModule,
     CursosModule,
+    CreateCursoModule,
     NgbModule
   ],
-  providers: [],
+  /* providers: [CursosService],*/ 
+  /*Caso queira ter uma instância separada do serviço se declara 
+  dentro do @Component dento do component.ts o provider e remove ele do app.module */
   bootstrap: [AppComponent]
 })
 export class AppModule { }
