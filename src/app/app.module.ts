@@ -20,6 +20,8 @@ import { DirectivesNgclassComponent } from './directives-ngclass/directives-ngcl
 import { DirectiveNgstyleComponent } from './directive-ngstyle/directive-ngstyle.component';
 import { ElvisOperatorComponent } from './elvis-operator/elvis-operator.component';
 import { ExampleNgcontentComponent } from './example-ngcontent/example-ngcontent.component';
+import { BackgroundYellowDirective } from './shared/background-yellow.directive';
+import { CustomDirectivesComponent } from './custom-directives/custom-directives.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +39,9 @@ import { ExampleNgcontentComponent } from './example-ngcontent/example-ngcontent
     DirectivesNgclassComponent,
     DirectiveNgstyleComponent,
     ElvisOperatorComponent,
-    ExampleNgcontentComponent
+    ExampleNgcontentComponent,
+    BackgroundYellowDirective,
+    CustomDirectivesComponent
   ],
   imports: [
     BrowserModule,
