@@ -16,6 +16,8 @@ import { AppCicloComponent } from './app-ciclo/app-ciclo.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { DirectivesNgswitchComponent } from './directives-ngswitch/directives-ngswitch.component';
 import { DirectivesNgforComponent } from './directives-ngfor/directives-ngfor.component';
+import { DirectivesNgclassComponent } from './directives-ngclass/directives-ngclass.component';
+import { DirectiveNgstyleComponent } from './directive-ngstyle/directive-ngstyle.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { DirectivesNgforComponent } from './directives-ngfor/directives-ngfor.co
     AppCicloComponent,
     DirectivesComponent,
     DirectivesNgswitchComponent,
-    DirectivesNgforComponent
+    DirectivesNgforComponent,
+    DirectivesNgclassComponent,
+    DirectiveNgstyleComponent
   ],
   imports: [
     BrowserModule,
