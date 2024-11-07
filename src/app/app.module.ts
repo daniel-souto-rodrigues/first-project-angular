@@ -29,6 +29,7 @@ import { CreateCursoModule } from './cursos/create-curso/create-curso.module';
 import { CursosService } from './cursos/cursos.service';
 import { LogService } from './shared/log.service';
 import { PipesComponent } from './pipes/pipes.component';
+import { CamelCasePipe } from './camel-case.pipe';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { PipesComponent } from './pipes/pipes.component';
     HighlightMouseDirective,
     HighlightDirective,
     NgElseDirective,
-    PipesComponent
+    PipesComponent,
+    CamelCasePipe
   ],
   imports: [
     BrowserModule,
