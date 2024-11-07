@@ -18,6 +18,8 @@ import { DirectivesNgswitchComponent } from './directives-ngswitch/directives-ng
 import { DirectivesNgforComponent } from './directives-ngfor/directives-ngfor.component';
 import { DirectivesNgclassComponent } from './directives-ngclass/directives-ngclass.component';
 import { DirectiveNgstyleComponent } from './directive-ngstyle/directive-ngstyle.component';
+import { ElvisOperatorComponent } from './elvis-operator/elvis-operator.component';
+import { ExampleNgcontentComponent } from './example-ngcontent/example-ngcontent.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +35,9 @@ import { DirectiveNgstyleComponent } from './directive-ngstyle/directive-ngstyle
     DirectivesNgswitchComponent,
     DirectivesNgforComponent,
     DirectivesNgclassComponent,
-    DirectiveNgstyleComponent
+    DirectiveNgstyleComponent,
+    ElvisOperatorComponent,
+    ExampleNgcontentComponent
   ],
   imports: [
     BrowserModule,
