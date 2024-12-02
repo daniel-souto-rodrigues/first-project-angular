@@ -1,7 +1,11 @@
-<p>Lista de cursos do portal {{nomePortal}} </p>
+<p>Lista de cursos do portal {{ nomePortal }}</p>
 
-<ul>
-    <li *ngFor="let curso of cursos">
-        {{curso}}
-    </li>
-</ul>
+<div class="collection">
+  <a 
+  class="collection-item" 
+  *ngFor="let curso of cursos"
+  [routerLink]="['/curso', curso.id]" 
+  routerLinkActive="router-link-active">
+    {{ curso.nome }}
+  </a>
+</div>

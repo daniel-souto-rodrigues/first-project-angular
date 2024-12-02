@@ -74,7 +74,7 @@ import { LoginComponent } from './login/login.component';
     NgbModule
   ],
   providers: [
-    //CursosService, /*Caso queira ter uma instância separada do serviço se declara dentro do @Component dento do component.ts o provider e remove ele do app.module */
+    CursosService,
     LogService,
     SettingsService,
     {

@@ -13,7 +13,7 @@ export class CreateCursoComponent implements OnInit {
     this._cursosService.addCursos(curso);
   }
 
-  cursos: string[] = [];
+  cursos: any[] = [];
 
   constructor(private _cursosService: CursosService) { }
 

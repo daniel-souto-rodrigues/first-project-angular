@@ -4,20 +4,24 @@ import { CommonModule } from '@angular/common';
 import { CursosComponent } from './cursos.component';
 import { CursosDetalheComponent } from './cursos-detalhe/cursos-detalhe.component';
 import { CursosService } from './cursos.service';
+import { AppRoutingModule } from '../app-routing.module';
+import { CursoNaoEncontradoComponent } from './curso-nao-encontrado/curso-nao-encontrado.component';
 
 
 
 @NgModule({
   declarations: [
     CursosComponent,
-    CursosDetalheComponent
+    CursosDetalheComponent,
+    CursoNaoEncontradoComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    AppRoutingModule
   ],
   exports: [
     CursosComponent
   ],
-  // providers: [CursosService]
+  providers: [CursosService]
 })
 export class CursosModule { }
