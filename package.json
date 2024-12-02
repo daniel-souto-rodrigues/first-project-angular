@@ -23,6 +23,8 @@
     "@popperjs/core": "^2.10.2",
     "bootstrap": "^5.3.3",
     "bootstrap-icons": "^1.11.3",
+    "jquery": "^2.2.4",
+    "materialize-css": "^1.0.0-rc.2",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.11.4"

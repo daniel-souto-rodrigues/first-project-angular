@@ -33,6 +33,8 @@ import { PipesComponent } from './pipes/pipes.component';
 import { CamelCasePipe } from './camel-case.pipe';
 import { SettingsService } from './settings.service';
 import { settings } from 'node:cluster';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
 
 
 
@@ -59,7 +61,9 @@ import { settings } from 'node:cluster';
     HighlightDirective,
     NgElseDirective,
     PipesComponent,
-    CamelCasePipe
+    CamelCasePipe,
+    HomeComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
